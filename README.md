@@ -1,8 +1,12 @@
 # Utils
-常用util
-收集常用的util包
-1：解析xml 文件获取内容
+## 常用util
+### 收集常用的util包
+|功能描述|知识点|
+|:---|:---|
+|解析pom文件，获取标签内的值|正则表达式，DomParser|
 
+**1：解析xml 文件获取内容**
+```
 export const getPomValues = (pomString, keys) => {
     const step1 = String(pomString).replace(/[\n]/g, '');
     const step2 = String(step1).replace(/[\r]/g, '');
@@ -18,3 +22,4 @@ export const getPomValues = (pomString, keys) => {
     });
     return result;
 };
+```
