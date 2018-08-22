@@ -2,7 +2,7 @@
 常用util
 收集常用的util包
 1：解析xml 文件获取内容
-\n
+
 export const getPomValues = (pomString, keys) => {
     const step1 = String(pomString).replace(/[\n]/g, '');
     const step2 = String(step1).replace(/[\r]/g, '');
