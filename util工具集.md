@@ -67,7 +67,7 @@ export const getPomValues = (pomString, keys) => {
     }
  ```
     
-** 3:解析请求地址 ** 
+**3:解析请求地址** 
 ### http://www.runoob.com/jquery/misc-trim.html?channelid=12333&name=xiaoming&age=23
 ```
 function showWindowHref(){
