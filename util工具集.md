@@ -65,4 +65,25 @@ export const getPomValues = (pomString, keys) => {
             return number;
         }
     }
-    ```
+ ```
+    
+** 3:解析请求地址 ** 
+### http://www.runoob.com/jquery/misc-trim.html?channelid=12333&name=xiaoming&age=23
+```
+function showWindowHref(){
+    var sHref = window.location.href;
+    var args = sHref.split('?');
+    if(args[0] == sHref){
+        return "";
+    }
+    var arr = args[1].split('&');
+    var obj = {};
+    for(var i = 0;i< arr.length;i++){
+        var arg = arr[i].split('=');
+        obj[arg[0]] = arg[1];
+    }
+    return obj;
+}
+var href = showWindowHref(); // obj
+console.log(href['name']); // xiaoming
+```
